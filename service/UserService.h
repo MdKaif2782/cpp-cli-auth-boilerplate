@@ -3,7 +3,7 @@
 #include <optional>
 #include <vector>
 #include"../database/DatabaseManager.h"
-#include "../data/User.h"
+#include "../model/User.h"
 
 class UserService {
 private:

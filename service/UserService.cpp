@@ -3,7 +3,7 @@
 #include <sqlite3.h>
 #include <iostream>
 
-#include "../data/User.h"
+#include "../model/User.h"
 #include "../database/DatabaseManager.h"
 
 // Implement proper password hashing (this is just a placeholder)
