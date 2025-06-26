@@ -3,4 +3,8 @@ project(cpp_cli_auth_boilerplate)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(cpp_cli_auth_boilerplate main.cpp)
+find_package(Sqlite3 REQUIRED)
+add_executable(cpp_cli_auth_boilerplate main.cpp
+        database/DatabaseManager.cpp
+        database/DatabaseManager.h)
+target_link_libraries(cpp_cli_auth_boilerplate sqlite3)
